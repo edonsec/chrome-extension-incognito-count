@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Incognito Count",
+  "description": "Shows amount of incognito windows open",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_icon": "src/img/icon.png",
+    "default_popup": "src/popup.html"
+  },
+  "icons": {
+    "16": "src/img/icon.png",
+    "48": "src/img/icon.png",
+    "128": "src/img/icon.png"
+  },
+  "background": {
+    "scripts": ["src/js/incognito_count.js"]
+  },
+  "commands": {
+    "toggle-feature-switch-to-normal": {
+      "suggested_key": {
+        "default": "Alt+Shift+N",
+        "mac": "Alt+Shift+N"
+      },
+      "description": "Switches to first normal window"
+    }
+  }
+}

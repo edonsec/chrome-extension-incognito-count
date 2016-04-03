@@ -1,0 +1,16 @@
+html, body
+{
+  max-width: 400px;
+  width: 200px;
+}
+
+#confirm-label
+{
+  display:block;
+  margin-bottom: 15px;
+}
+
+#close-all-dialog
+{
+  display:none;
+}
